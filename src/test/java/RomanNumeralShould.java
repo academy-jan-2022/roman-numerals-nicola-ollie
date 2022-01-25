@@ -68,4 +68,12 @@ public class RomanNumeralShould {
         assertEquals("X", result);
     }
 
+    @Test
+    public void
+    return_XX_when_given_20(){
+        var romanNumeral = new RomanNumeral();
+        var result = romanNumeral.convert(20);
+        assertEquals("XX", result);
+    }
+
 }
