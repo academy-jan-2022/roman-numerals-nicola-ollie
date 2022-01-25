@@ -9,6 +9,7 @@ public class RomanNumeral {
             numeralString += "X";
             arabic = arabic - 10;
         }
+
         if (arabic >= 5){
             numeralString += "V";
             arabic -= 5;
