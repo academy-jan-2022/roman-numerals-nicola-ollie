@@ -9,6 +9,7 @@ public class RomanNumeral {
     LinkedHashMap<Integer, String> ArabicToRoman = new LinkedHashMap<>(){
         {
             put(1000, "M");
+            put(900, "CM");
             put(500, "D");
             put(400, "CD");
             put(100, "C");
