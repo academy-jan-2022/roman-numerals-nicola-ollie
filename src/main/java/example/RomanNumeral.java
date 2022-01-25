@@ -5,9 +5,9 @@ public class RomanNumeral {
         var numeralString = "";
 
 
-        if (arabic >= 10){
+        while (arabic >= 10){
             numeralString += "X";
-            arabic = arabic % 10;
+            arabic = arabic - 10;
         }
         if (arabic >= 5){
             numeralString += "V";
