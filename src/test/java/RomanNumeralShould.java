@@ -29,8 +29,9 @@ public class RomanNumeralShould {
                 Arguments.of("VIII", 8),
                 Arguments.of("X", 10),
                 Arguments.of("XX", 20),
-                Arguments.of("XX", 20),
-                Arguments.of("XXVI", 26)
+                Arguments.of("XXVI", 26),
+                Arguments.of("L", 50)
+
         );
     }
 
