@@ -28,4 +28,12 @@ public class RomanNumeralShould {
         assertEquals("III", result);
     }
 
+    @Test
+    public void
+    return_V_when_given_5(){
+        var romanNumeral = new RomanNumeral();
+        var result = romanNumeral.convert(5);
+        assertEquals("V", result);
+    }
+
 }
