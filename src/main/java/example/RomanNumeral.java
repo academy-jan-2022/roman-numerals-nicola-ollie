@@ -30,12 +30,12 @@ public class RomanNumeral {
         StringBuilder numeralString = new StringBuilder();
 
         for (Map.Entry<Integer, String> entry : ArabicToRoman.entrySet()) {
-            Integer key = entry.getKey();
-            String value = entry.getValue();
+            Integer arabicKey = entry.getKey();
+            String numeralValue = entry.getValue();
 
-            while (arabic >= key) {
-                numeralString.append(value);
-                arabic -= key;
+            while (arabic >= arabicKey) {
+                numeralString.append(numeralValue);
+                arabic -= arabicKey;
             }
         }
 
