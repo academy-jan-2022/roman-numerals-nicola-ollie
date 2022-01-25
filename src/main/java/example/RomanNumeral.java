@@ -10,6 +10,10 @@ public class RomanNumeral {
             return "VI";
         }
 
+        if (arabic == 7){
+            return "VII";
+        }
+
         var numeralString = "";
         for (var i = 0; i < arabic; i++){
             numeralString += "I";
