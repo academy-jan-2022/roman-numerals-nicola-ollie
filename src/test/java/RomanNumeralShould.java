@@ -36,4 +36,12 @@ public class RomanNumeralShould {
         assertEquals("V", result);
     }
 
+    @Test
+    public void
+    return_V_when_given_6(){
+        var romanNumeral = new RomanNumeral();
+        var result = romanNumeral.convert(5);
+        assertEquals("VI", result);
+    }
+
 }
