@@ -2,9 +2,11 @@ package example;
 
 import java.util.Dictionary;
 import java.util.Hashtable;
+import java.util.LinkedHashMap;
+import java.util.Map;
 
 public class RomanNumeral {
-    Hashtable<Integer, String> ArabicToRoman = new Hashtable();
+    LinkedHashMap<Integer, String> ArabicToRoman = new LinkedHashMap<>();
 
 
     public String convert(int arabic) {
@@ -19,32 +21,16 @@ public class RomanNumeral {
 
         var numeralString = "";
 
-        while (arabic >= 100){
-            numeralString += ArabicToRoman.get(100);
-            arabic = arabic - 100;
-        }
 
-        while (arabic >= 50){
-            numeralString += ArabicToRoman.get(50);
-            arabic = arabic - 50;
-        }
-        while (arabic >= 10){
-            numeralString += ArabicToRoman.get(10);
-            arabic = arabic - 10;
-        }
-
-        while (arabic >= 5){
-            numeralString += ArabicToRoman.get(5);
-            arabic -= 5;
-        }
-
-        while (arabic >= 1){
-            numeralString += ArabicToRoman.get(1);
-            arabic -= 1;
+        for (Map.Entry<Integer, String> entry : ArabicToRoman.entrySet()) {
+            Integer key = entry.getKey();
+            String value = entry.getValue();
+            while (arabic >= key) {
+                numeralString += value;
+                arabic = arabic - key;
+            }
         }
 
         return numeralString;
     }
-
-
 }
