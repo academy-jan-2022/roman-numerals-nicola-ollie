@@ -11,6 +11,7 @@ public class RomanNumeral {
             put(1000, "M");
             put(500, "D");
             put(100, "C");
+            put(90, "XC");
             put(50, "L");
             put(40, "XL");
             put(10, "X");
