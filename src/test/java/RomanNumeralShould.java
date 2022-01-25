@@ -8,7 +8,7 @@ public class RomanNumeralShould {
     public void
     return_I_when_given_1(){
         var romanNumeral = new RomanNumeral();
-        var result = romanNumeral.convert();
+        var result = romanNumeral.convert(1);
         assertEquals("I", result);
     }
 
@@ -16,7 +16,7 @@ public class RomanNumeralShould {
     public void
     return_II_when_given_2(){
         var romanNumeral = new RomanNumeral();
-        var result = romanNumeral.convert();
+        var result = romanNumeral.convert(2);
         assertEquals("II", result);
     }
 }
