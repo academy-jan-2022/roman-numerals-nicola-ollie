@@ -37,7 +37,8 @@ public class RomanNumeralShould {
                 Arguments.of("IX", 9),
                 Arguments.of("XL", 40),
                 Arguments.of("XC", 90),
-                Arguments.of("CD", 400)
+                Arguments.of("CD", 400),
+                Arguments.of("CM", 900)
 
         );
     }
