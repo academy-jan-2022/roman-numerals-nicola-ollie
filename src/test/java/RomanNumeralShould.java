@@ -38,9 +38,9 @@ public class RomanNumeralShould {
 
     @Test
     public void
-    return_V_when_given_6(){
+    return_VI_when_given_6(){
         var romanNumeral = new RomanNumeral();
-        var result = romanNumeral.convert(5);
+        var result = romanNumeral.convert(6);
         assertEquals("VI", result);
     }
 
