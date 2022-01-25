@@ -19,4 +19,13 @@ public class RomanNumeralShould {
         var result = romanNumeral.convert(2);
         assertEquals("II", result);
     }
+
+    @Test
+    public void
+    return_III_when_given_3(){
+        var romanNumeral = new RomanNumeral();
+        var result = romanNumeral.convert(3);
+        assertEquals("III", result);
+    }
+
 }
