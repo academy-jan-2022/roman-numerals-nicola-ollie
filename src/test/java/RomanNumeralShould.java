@@ -44,4 +44,12 @@ public class RomanNumeralShould {
         assertEquals("VI", result);
     }
 
+    @Test
+    public void
+    return_VII_when_given_7(){
+        var romanNumeral = new RomanNumeral();
+        var result = romanNumeral.convert(7);
+        assertEquals("VII", result);
+    }
+
 }
