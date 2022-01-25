@@ -31,7 +31,10 @@ public class RomanNumeralShould {
                 Arguments.of("XX", 20),
                 Arguments.of("XXVI", 26),
                 Arguments.of("L", 50),
-                Arguments.of("C", 100)
+                Arguments.of("C", 100),
+                Arguments.of("MM", 2000),
+                Arguments.of("IV", 4)
+
 
         );
     }
