@@ -11,4 +11,12 @@ public class RomanNumeralShould {
         var result = romanNumeral.convert();
         assertEquals("I", result);
     }
+
+    @Test
+    public void
+    return_II_when_given_2(){
+        var romanNumeral = new RomanNumeral();
+        var result = romanNumeral.convert();
+        assertEquals("II", result);
+    }
 }
