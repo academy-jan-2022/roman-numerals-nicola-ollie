@@ -6,20 +6,23 @@ import java.util.LinkedHashMap;
 import java.util.Map;
 
 public class RomanNumeral {
-    LinkedHashMap<Integer, String> ArabicToRoman = new LinkedHashMap<>();
+    LinkedHashMap<Integer, String> ArabicToRoman = new LinkedHashMap<>(){
+        {
+            put(1000, "M");
+            put(500, "D");
+            put(100, "C");
+            put(50, "L");
+            put(40, "XL");
+            put(10, "X");
+            put(9, "IX");
+            put(5, "V");
+            put(4, "IV");
+            put(1, "I");
+        }
+    };
 
 
     public String convert(int arabic) {
-
-        ArabicToRoman.put(1000, "M");
-        ArabicToRoman.put(500, "D");
-        ArabicToRoman.put(100, "C");
-        ArabicToRoman.put(50, "L");
-        ArabicToRoman.put(10, "X");
-        ArabicToRoman.put(9, "IX");
-        ArabicToRoman.put(5, "V");
-        ArabicToRoman.put(4, "IV");
-        ArabicToRoman.put(1, "I");
 
         var numeralString = "";
 
