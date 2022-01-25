@@ -19,6 +19,11 @@ public class RomanNumeral {
 
         var numeralString = "";
 
+        while (arabic >= 100){
+            numeralString += ArabicToRoman.get(100);
+            arabic = arabic - 100;
+        }
+
         while (arabic >= 50){
             numeralString += ArabicToRoman.get(50);
             arabic = arabic - 50;
