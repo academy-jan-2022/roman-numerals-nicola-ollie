@@ -27,19 +27,18 @@ public class RomanNumeral {
 
     public String convert(int arabic) {
 
-        var numeralString = "";
-
+        StringBuilder numeralString = new StringBuilder();
 
         for (Map.Entry<Integer, String> entry : ArabicToRoman.entrySet()) {
             Integer key = entry.getKey();
             String value = entry.getValue();
 
             while (arabic >= key) {
-                numeralString += value;
-                arabic = arabic - key;
+                numeralString.append(value);
+                arabic -= key;
             }
         }
 
-        return numeralString;
+        return numeralString.toString();
     }
 }
