@@ -16,6 +16,7 @@ public class RomanNumeral {
         ArabicToRoman.put(100, "C");
         ArabicToRoman.put(50, "L");
         ArabicToRoman.put(10, "X");
+        ArabicToRoman.put(9, "IX");
         ArabicToRoman.put(5, "V");
         ArabicToRoman.put(4, "IV");
         ArabicToRoman.put(1, "I");
