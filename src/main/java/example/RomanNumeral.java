@@ -17,6 +17,7 @@ public class RomanNumeral {
         ArabicToRoman.put(50, "L");
         ArabicToRoman.put(10, "X");
         ArabicToRoman.put(5, "V");
+        ArabicToRoman.put(4, "IV");
         ArabicToRoman.put(1, "I");
 
         var numeralString = "";
@@ -25,6 +26,7 @@ public class RomanNumeral {
         for (Map.Entry<Integer, String> entry : ArabicToRoman.entrySet()) {
             Integer key = entry.getKey();
             String value = entry.getValue();
+
             while (arabic >= key) {
                 numeralString += value;
                 arabic = arabic - key;
